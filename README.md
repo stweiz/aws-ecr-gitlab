@@ -28,7 +28,7 @@ You need rights to create a new AWS user.
   4. Attach existing policies directly
   5. Search vor "AmazonEC2ContainerRegistryPowerUser" and activate it
   6. Create user
-  7. IMPORTANT! Remember the "Access Key ID" and "Secret Access Key". You will need them.
+  7. IMPORTANT! Remember the **Access Key ID** and **Secret Access Key**. You will need them.
 
 ### Configure credentials for access in GitLab to AWS ECR
 
@@ -44,7 +44,7 @@ As said before, environment variables have to been configured:
 
 ### .gitlab-ci.yml
 
-This is an example of a ready to go Docker build entry in the .gitlab-ci.yml for building a Docker image and pushing it to the ECR:
+This is an example of a ready to go Docker build entry in the .gitlab-ci.yml for building a Docker image and pushing it to an existing ECR:
 
 ```yaml
 docker-build-master:
