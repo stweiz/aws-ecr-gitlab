@@ -12,6 +12,10 @@ to get a token and will authorize using this token while pushing/pulling an imag
 
 ## Setup and usage
 
+The built image is pushed to the [Docker hub](https://hub.docker.com/r/bausparkadse/aws-ecr-gitlab)
+
+You can use it or build your own image with the [Dockerfile](Dockerfile)
+
 ### Create a new AWS account for GitLab
 
 You need rights to create a new AWS user.
@@ -36,7 +40,7 @@ As said before, environment variables have to been configured:
 4. Variables
 5. Add a new variable with the key "AWS_ACCESS_KEY_ID" and the value of the "Access Key ID", which you've got while creating a new AWS user
 6. Add another variable with the key "AWS_SECRET_ACCESS_KEY" and the value of the "Secret Access Key", which you've also got while creating a new AWS user
-7. Optional: Add a variable for the URI to the Docker image repository in ECR: As key for example: CI_REGISTRY_IMAGE_AWS and the value of the ECR URI: <account_id>.dkr.ecr.<region>.amazonaws.com/<service_name>
+7. Optional: Add a variable for the URI to the Docker image repository in ECR: As key for example: CI_REGISTRY_IMAGE_AWS and the value of the ECR URI: `<account_id>.dkr.ecr.<region>.amazonaws.com/<service_name>`
 
 ### .gitlab-ci.yml
 
